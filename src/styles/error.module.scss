@@ -1,0 +1,14 @@
+@import "variables";
+.main{
+    margin: 20vmin;
+    padding: 5vmin;
+    justify-content: center;
+    font-family: $primary-font;
+
+    
+    background: rgba( 255, 255, 255, 0.30 );
+    backdrop-filter: blur( $bl );
+    -webkit-backdrop-filter: blur( 8.0px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+}

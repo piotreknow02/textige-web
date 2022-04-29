@@ -1,0 +1,26 @@
+// transition time
+$time: 0.5s;
+
+// border
+$border-rad: 1vmax;
+
+// blur
+$bl: 10px;
+
+// fonts
+$title-font: "Lobster", cursive;
+$primary-font: "Architects Daughter", -apple-system, cursive;
+$secondary-font: "Balsamiq Sans", cursive;
+
+// padding
+$pad: 3vmin;
+$secpad: 1vmax;
+
+@mixin blurbox {
+    box-shadow: var(--shadow);
+    background: rgba( 255, 255, 255, 0.30 );
+    backdrop-filter: blur( $bl );
+    -webkit-backdrop-filter: blur( 8.0px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: $border-rad;
+}

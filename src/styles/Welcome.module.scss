@@ -1,0 +1,25 @@
+@import "variables";
+
+.main
+{
+    margin: 20vmin;
+    padding: 5vmin;
+    display: flex;
+    flex-direction: column;
+    @include blurbox;
+    & > h2 > i
+    {
+        font-family: $title-font;
+    }
+    color: var(--text-color);
+}
+.title
+{
+}
+.checkmark
+{
+    color: rgb(0, 255, 0);
+    background-color: var(--text-color);
+    padding: 1px;
+    border-radius: 999999999999px;
+}

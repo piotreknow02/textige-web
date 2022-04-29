@@ -1,0 +1,19 @@
+@import "variables";
+
+.main
+{
+    width: 35vh;
+    height: 35vh;
+    background: rgba( 255, 255, 255, 0.30 );
+    backdrop-filter: blur( $bl );
+    -webkit-backdrop-filter: blur( 8.0px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: $border-rad;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image
+{
+    height: 25vh;
+}

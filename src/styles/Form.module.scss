@@ -1,0 +1,121 @@
+@import "variables";
+
+.form
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 10px;
+    margin: 8vmin;
+    padding: 3vmax;
+    width: min-content;
+    @include blurbox;
+}
+.input
+{
+    color: var(--text-color);
+    border-color: transparent;
+    margin: 1vmax;
+    font-family: $secondary-font;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid var(--primary-color);
+    width: 100%;
+    font-size: 0,95vmin;
+    background: rgba( 255, 255, 255, 0 );
+}
+
+.input_container {
+    position: relative;
+}
+
+label {
+    color: var(--text-color);
+    margin: 0px;
+    padding: $secpad;
+    font-family: $secondary-font;
+    position: absolute;
+    top: 1vh;
+    left: 2vh;
+    padding: 0px;
+    transition: all 0.5s ease-in-out;
+    pointer-events:none;
+    font-size: 2vh;
+}
+
+input:focus {
+    border-color: var(--secondary-color);
+
+    ~ label {
+    top: 0vh;
+    font-size: 1.5vh;
+    }
+}
+
+input:valid ~ label {
+    top: 0vh;
+    font-size: 1.5vh;
+    }
+
+
+
+.submit
+{
+    border-width: 0px;
+    padding: 2vmin;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border-radius: $border-rad;
+    margin: 2vmax;
+    margin-left: 3vmax;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+}
+.h2
+{
+    margin: 2vmax;
+    font-family: $title-font;
+    color: var(--text-color);
+}
+.h3
+{
+    font-family: $primary-font;
+    color: var(--text-color);
+}
+.img-container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    width: 100%;
+    height: 35vh;
+}
+.img-container > img
+{
+    flex: 1;
+    width: auto;
+    max-height: 25vh;
+}
+.container
+{
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.checkbox
+{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    border: 1px solid var(--secondary-color);
+    border-radius: 4px;
+    outline: none;
+    background-color: var(--bg-color);
+    cursor: pointer;    
+}

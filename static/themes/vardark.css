@@ -1,0 +1,8 @@
+:root
+{
+    --bg-color: #0f0f0f;
+    --bg-accent-color: #cecece;
+    --text-color: #ececec;
+    --text-accent-color: #c8fffc;
+    --shadow: 0px 0px 26px 18px rgba(0,0,0,0.5);
+}

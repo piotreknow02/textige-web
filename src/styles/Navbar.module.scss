@@ -1,0 +1,90 @@
+@import "variables";
+
+.title
+{
+    font-family: $title-font;
+    color: var(--text-color);
+    font-size: 3rem;
+}
+.subtitle
+{
+    font-family: $primary-font;
+    color: var(--bg-color);
+}
+.icon
+{
+    font-size: 3vmax;
+    color: var(--text-accent-color);
+}
+.themeswitchbtn
+{
+    border: 2px solid var(--text-accent-color);
+    border-radius: $border-rad;
+    padding: $secpad;
+    margin-right: $secpad;
+}
+.newaccountbtn
+{
+    background-color: var(--text-accent-color);
+    padding: $secpad;
+    border-radius: $secpad;
+}
+.actionscontainer
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.navigation
+{
+    width: 100%;
+    height: 15vh;
+    padding: 0px 2vmin;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.image
+{
+    width: 50px;
+}
+.logocontainer
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.separator
+{
+    width: 98vw;
+    height: 2px;
+    margin: auto;
+    border-style: outset;
+    border-color: var(--text-color);
+    background-color: var(--text-accent-color);
+}
+.registerbtn
+{
+    margin: 0px 5vw;
+    border: 0px solid transparent;
+    background-color: var(--text-accent-color);
+    color: var(--bg-accent-color);
+    padding: $pad;
+    border-radius: 400px;
+}
+.navbar
+{
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    background-color: var(--bg-color);
+    z-index: 1;
+}
+.spacer
+{
+    height: 15vh;
+    width: 100%;
+}
